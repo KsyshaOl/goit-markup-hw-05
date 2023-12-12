@@ -466,10 +466,85 @@
                     </li>
                 </ul>
             </div>
+            <div class="subscribe-container">
+                <p class="footer-subscribe-text">Subscribe</p>
+                <form class="footer-subscribe-form">
+                    <label class="footer-subscribe-form-label" for="footer-user-email">
+                        <input class="footer-subscribe-form-input" id="footer-user-email" name="footer-user-email" type="email" placeholder="E-mail">
+                    </label>
+                    <button class="footer-subscribe-form-btn" type="submit">Subscribe
+                        <svg class="footer-subscribe-form-btn-icon" width="24" height="24" aria-label="icon plane">
+                            <use class="" href="./images/icons.svg#icon-plane"></use>
+                        </svg>
+                    </button>
+                </form>
+            </div> 
         </div>
     </footer>
 
         <!----------- /FOOTER ----------->
 
+     <div class="backdrop">
+        <div class="modal">
+            <button class="modal-close-btn" type="button">
+                <svg class="modal-close-icon"  width="8" height="8" aria-label="close-modal-icon">
+                    <use href="./images/icons.svg#icon-cross"></use>
+                </svg>
+            </button>
+            <p class="review-form-description">Leave your contacts and we will call you back</p>
+            <form class="review-form">
+                <div class="review-form-container">
+                    <label class="review-form-label" for="username">Name</label>
+                    <div class="review-form-input-wrapper">
+                        <input class="review-form-input" id="username" name="user-name" type="text" >
+                        <svg class="review-form-input-icon" width="12" height="12" aria-label="icon user">
+                            <use class="" href="./images/icons.svg#icon-person"></use>
+                        </svg>
+                    </div> 
+                </div>    
+                <div class="review-form-container">
+                    <label class="review-form-label" for="userphone">Phone</label>
+                    <div class="review-form-input-wrapper">
+                        <input class="review-form-input" id="userphone" name="user-phone" type="tel">
+                        <svg class="review-form-input-icon" width="12" height="12" aria-label="icon user">
+                            <use class="" href="./images/icons.svg#icon-phone"></use>
+                        </svg>
+                    </div>
+                </div>     
+                <div class="review-form-container">
+                    <label class="review-form-label" for="useremail">Email</label>
+                    <div class="review-form-input-wrapper">
+                        <input class="review-form-input" id="useremail" name="user-email" type="email" >
+                        <svg class="review-form-input-icon" width="12" height="12" aria-label="icon user">
+                            <use class="" href="./images/icons.svg#icon-email"></use>
+                        </svg>
+                    </div>
+                </div> 
+                <div class="review-form-container">
+                    <label class="review-form-label" for="usercomment">Comment</label>
+                    <textarea class="review-form-comment" id="usercomment" name="usercomment" placeholder="Text input"></textarea>
+                </div>  
+                <div class="review-checkbox-container"> 
+                    <input 
+                    class="review-form-input-checkbox visually-hidden" 
+                    id="user-privacy-policy" 
+                    name="user-privacy-policy" 
+                    type="checkbox" 
+                    value="true" 
+                    required>
+                    <label class="review-checkbox-label" for="user-privacy-policy">
+                        <span class="review-span-checkbox">
+                            <svg class="review-span-checkbox-icon" width="10" height="8" aria-label="checkmark icon">
+                                <use href="./images/icons.svg#icon-check-mark"></use>
+                            </svg>
+                        </span>
+                            I accept the terms and conditions of the 
+                        <a href="">Privacy Policy</a>
+                    </label>
+                </div>
+                <button class="modal-send-btn" type="submit">Send</button>
+            </form>
+        </div>
+     </div>   
 </body>
 </html>
